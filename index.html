@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styly.css">
+    <title>Hra Kostky</title>
+</head>
+<body>
+    <div class="playField">
+        <div class="totalScore totalScore0"id="Player0">
+            <p id="active1">1. hráč</p>
+            <p id="totalScorePlayer0">30</p>
+        </div>
+
+        <div class="totalScore totalScore1" id="Player1">
+            <p id="active2">2. hráč</p>
+            <p id="totalScorePlayer1">33</p>
+        </div>
+
+        <div class="currentScore currentScore0">
+                <p>Současné skóre</p>
+            <p id="currentScore_0">1</p>
+        </div>
+        
+        <div class="currentScore currentScore1">
+                <p>Současné skóre</p>
+            <p id="currentScore_1">2</p>
+        </div>
+            <div>
+                <p id="Bankrot" hidden>
+                   <span class="bankrot_ "> Bankrot!</span>
+                   
+                </p>
+                <p id="Winner" hidden>
+                    
+                </p>
+            </div>
+
+        <div class="middleText">
+            <button class="btn" onclick="rollDice() " id="throwDice">Hodit kostkou</button>
+            <button class="btn" onclick="holdScore()" id="holdScore">Uložit skóre</button>
+            <button class="btn" onclick="newGame()" id="newGame">Nová hra</button>
+        </div>
+
+        <div class="dice">
+            <img src="images/1.jpg" alt="" class="diceImg">
+            <img src='images/2.jpg' class="diceRoll">
+          
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
